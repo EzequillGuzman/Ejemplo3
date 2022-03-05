@@ -1,0 +1,110 @@
+:root{
+	--ancho: 1355px;
+
+}
+.contenedor{
+    width: 100%;
+    /*alto del 100% height: 100vh;*/
+    height: 40vh;
+    display: grid;
+    grid-template-rows: 100% 100% 100% 100%;
+    grid-template-areas: 
+    'uno dos tres cuatro';
+    color: white;
+}
+
+header{
+	 width: var(--ancho);
+    height: 100px;
+    margin: auto;
+
+}
+
+nav{
+    width:var(--ancho);
+    height: 30px;
+    background-color: darkred;
+    margin:auto
+}
+
+
+article{
+width: var(--ancho);
+height: 150px;
+margin: auto;
+
+}
+
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+
+.limenu {
+	color: white;
+    float: left;
+    height: 25px;
+    width: 5%;
+  }
+
+  .menuder { 
+
+    float: right;
+    height: 30px;
+    width: 4%;
+   }
+  
+.izquierda{
+	float: left;
+	width: 12%;
+    height:100%;
+}
+
+.derecha{
+	float: right;
+	width: 12%;
+    height:100%;
+}
+.tabla1{
+	float: left;
+	width: 670px;
+	height: 150px;
+
+}
+.tabla2{
+	float: right;
+	width: 670px;
+	height: 150px;
+
+}
+
+.item1{
+    grid-area:uno;
+    background-color: darkkhaki;
+}
+.item2{
+    grid-area:dos;
+    background-color: gray;
+}
+.item3{
+    grid-area:tres;
+    background-color: darkred;
+}
+.item4{
+    grid-area:cuatro;
+    background-color: goldenrod;
+}
+
+footer{
+    width: var(--ancho);
+    height: 50px;
+    margin: auto;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+
+}
